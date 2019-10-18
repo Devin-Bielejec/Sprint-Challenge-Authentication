@@ -1,11 +1,11 @@
 const request = require("supertest");
 
-const Users = require("../data/dbConfig.js");
+const Users = require("../database/dbConfig.js");
 
 const bcrypt = require("bcryptjs");
 
 // the data access file we are testing
-const server = require("../server");
+const server = require("../server.js");
 
 describe("POST /register", function() {
   beforeEach(async () => {
