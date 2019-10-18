@@ -4,7 +4,7 @@ module.exports = {
   development: {
     client: "sqlite3",
     connection: {
-      filename: "./data/users.db3"
+      filename: "./database/auth.db3"
     },
     useNullAsDefault: true,
     // SQLite will not enforce foreign keys by default
@@ -27,7 +27,7 @@ module.exports = {
     },
     useNullAsDefault: true,
     migrations: {
-      directory: "./data/migrations"
+      directory: "./database/auth.db3"
     },
     seeds: {
       directory: "./data/seeds"
